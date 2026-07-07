@@ -20,9 +20,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Me-portafolio
     steps:
       - name: Clonar el Repositorio
         uses: actions/checkout@v4
@@ -44,7 +41,7 @@ jobs:
       - name: Subir los compilados (DIST)
         uses: actions/upload-pages-artifact@v4
         with:
-          path: '.Portafolio/Me-portafolio/dist'
+          path: './dist'
 
       - name: Publicar Artefactos
         id: deployment
