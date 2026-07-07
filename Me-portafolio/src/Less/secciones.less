@@ -1,0 +1,242 @@
+// ===== SOBRE MÍ =====
+.sobre-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  .grid(220px 1fr, 3rem);
+  align-items: start;
+}
+
+.foto-placeholder {
+  background: @fondo-gris;
+  border: 2px dashed @borde;
+  border-radius: @radio;
+  aspect-ratio: 1;
+  .flex(center, center);
+  font-size: 0.85rem;
+  color: @texto-gris;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sobre-texto p {
+  color: @texto-gris;
+  margin-bottom: 1rem;
+}
+
+.datos-rapidos {
+  .flex(flex-start, center, 2rem);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid @borde;
+}
+
+.dato-num {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: @azul;
+}
+
+.dato-label {
+  font-size: 0.8rem;
+  color: @texto-gris;
+}
+
+// ===== SKILLS =====
+.skills-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  .grid(1fr 1fr, 2rem);
+}
+
+.skill-grupo {
+  background: @fondo;
+  border: 1px solid @borde;
+  border-radius: @radio;
+  padding: 1.75rem;
+
+  h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: @texto-gris;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.skill-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-nombre {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.barra {
+  height: 6px;
+  background: @borde;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.barra-fill {
+  height: 100%;
+  width: 0;
+  background: @azul;
+  border-radius: 99px;
+  transition: width 1s ease;
+
+  &.activa { width: var(--p); }
+}
+
+// ===== PROYECTOS =====
+.proyectos-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  .grid(1fr 1fr, 1.5rem);
+}
+
+.proyecto-card {
+  .tarjeta-base();
+  transition: box-shadow @transicion-rapida, border-color @transicion-rapida, transform @transicion-rapida;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+    border-color: @azul;
+    transform: translateY(-3px);
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+
+  p {
+    font-size: 0.88rem;
+    color: @texto-gris;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.proyecto-header {
+  .flex(space-between, center);
+  margin-bottom: 1rem;
+}
+
+.proyecto-num {
+  font-family: @fuente-code;
+  font-size: 0.8rem;
+  color: @azul;
+  font-weight: 500;
+}
+
+.proyecto-links {
+  .flex(flex-start, center, 1rem);
+
+  a {
+    font-size: 0.82rem;
+    color: @texto-gris;
+    font-weight: 500;
+    transition: color @transicion-rapida;
+
+    &:hover { color: @azul; }
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  span {
+    font-size: 0.75rem;
+    background: @azul-claro;
+    color: @azul;
+    padding: 0.25rem 0.7rem;
+    border-radius: 99px;
+    font-weight: 500;
+  }
+}
+
+// ===== CONTACTO =====
+.contacto-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  .grid(1fr 1.5fr, 4rem);
+  align-items: start;
+}
+
+.contacto-info p {
+  color: @texto-gris;
+  margin-bottom: 1.5rem;
+}
+
+.contacto-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+
+  li {
+    .flex(flex-start, center, 0.75rem);
+    font-size: 0.9rem;
+    color: @texto-gris;
+
+    span { font-size: 1rem; }
+  }
+}
+
+// ===== FORMULARIO =====
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: @texto;
+  }
+
+  input,
+  textarea {
+    border: 1px solid @borde;
+    border-radius: @radio;
+    padding: 0.7rem 1rem;
+    font-family: @fuente-base;
+    font-size: 0.9rem;
+    color: @texto;
+    background: @fondo;
+    outline: none;
+    transition: border-color @transicion-rapida;
+    resize: vertical;
+
+    &:focus { border-color: @azul; }
+    &.error { border-color: @rojo-error; }
+  }
+}
+
+.form-msg {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  min-height: 1.2rem;
+
+  &.ok  { color: @verde-ok; }
+  &.err { color: @rojo-error; }
+}

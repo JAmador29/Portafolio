@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JA — Ingeniero en Sistemas</title>
+  <link rel="stylesheet" href="./src/Less/Styles.less" />
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">JA<span class="dot"></span></div>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Skills</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <section class="hero">
+    <p class="hero-saludo">Hola, soy</p>
+    <h1 class="hero-nombre">José David Amador Espino</h1>
+    <p class="hero-cargo">Ingeniero en Ciencias de la Computación</p>
+    <p class="hero-desc">Desarrollo soluciones de software con código limpio y bien estructurado. Apasionado por
+      aprender y construir cosas nuevas que funcionen y sean de bien.</p>
+    <div class="hero-btns">
+      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+      <a href="#contacto" class="btn-secondary">Contáctame</a>
+    </div>
+  </section>
+
+  <section class="seccion" id="sobre-mi">
+    <h2 class="seccion-titulo">Sobre mí</h2>
+    <div class="sobre-grid">
+      <div class="sobre-foto">
+        <div class="foto-placeholder"><img src="1761120929908.jpg" alt="mi foto" /></div>
+      </div>
+      <div class="sobre-texto">
+        <p>Soy estudiante / Pasante universitario de la carrera de Ingeniería en Ciencias de la Computación con interés
+          en el desarrollo de software, Desarrollo web, Analista de datos y redes. Me gusta resolver problemas y
+          aprender nuevas tecnologías.</p>
+        <p>Busco oportunidades donde pueda aplicar mis conocimientos y seguir creciendo como profesional.</p>
+        <div class="datos-rapidos">
+          <div class="dato">
+            <span class="dato-num">3+</span>
+            <span class="dato-label">Años estudiando</span>
+          </div>
+          <div class="dato">
+            <span class="dato-num">2+</span>
+            <span class="dato-label">Proyectos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion-gris" id="habilidades">
+    <h2 class="seccion-titulo">Habilidades</h2>
+    <div class="skills-grid">
+
+      <div class="skill-grupo">
+        <h3>Lenguajes</h3>
+        <div class="skill-lista">
+          <div class="skill-item">
+            <span class="skill-nombre">Python</span>
+            <div class="barra">
+              <div class="barra-fill" style="--p: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-nombre">JavaScript</span>
+            <div class="barra">
+              <div class="barra-fill" style="--p: 60%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-nombre">Java</span>
+            <div class="barra">
+              <div class="barra-fill" style="--p: 65%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-nombre">C / C++</span>
+            <div class="barra">
+              <div class="barra-fill" style="--p: 55%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-grupo">
+        <h3>Herramientas & BD</h3>
+        <div class="skill-lista">
+          <div class="skill-item">
+            <span class="skill-nombre">MySQL / CQL / MongoDB</span>
+            <div class="barra">
+              <div class="barra-fill" style="--p: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-nombre">Git / GitHub</span>
+            <div class="barra">
+              <div class="barra-fill" style="--p: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-nombre">Linux</span>
+            <div class="barra">
+              <div class="barra-fill" style="--p: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="seccion" id="proyectos">
+    <h2 class="seccion-titulo">Proyectos</h2>
+    <div class="proyectos-grid">
+
+      <div class="proyecto-card">
+        <div class="proyecto-header">
+          <span class="proyecto-num">01</span>
+          <div class="proyecto-links">
+            <a href="https://github.com/JAmador29/Proyecto_ENBCORG">GitHub</a>
+            <a href="https://escuela-nacional-de-bomberos.vercel.app/">Demo</a>
+          </div>
+        </div>
+        <h3>Pagina Web para Escuela Nacional de Bomberos </h3>
+        <p>Pagina web de tipo informativa que srive para dar publicidad a la institucion educativa.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="proyecto-card">
+        <div class="proyecto-header">
+          <span class="proyecto-num">02</span>
+          <div class="proyecto-links">
+            <a href="https://github.com/JAmador29/Proyecto_DS_202601">GitHub</a>
+          </div>
+        </div>
+        <h3>Sistema de gestion de inventarios y facturación</h3>
+        <p>Sistema de gestion de inventarios a nivel basico con diversos modulos de reportes.</p>
+        <div class="tags">
+          <span>C#</span><span>SQL Server</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="seccion seccion-gris" id="contacto">
+    <h2 class="seccion-titulo">Contacto</h2>
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <p>Estoy disponible para pasantías y oportunidades laborales.</p>
+        <ul class="contacto-lista">
+          <li><span>✉</span> josedavidamamdorespino@gmail.com</li>
+          <li><span>🔗</span> José Amador -<a href="https://www.linkedin.com/in/jos%C3%A9-amador-2b38551a2/"
+              target="_blank">LinkedIn</a></li>
+          <li><span>💻</span> Jamador29<a href="https://github.com/JAmador29" target="_blank">GitHub</a></li>
+          <li><span>📍</span> Tegucigalpa, Honduras</li>
+        </ul>
+      </div>
+      <form class="formulario" id="formulario">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Tu nombre" />
+        </div>
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="tu@email.com" />
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="5" placeholder="¿En qué te puedo ayudar?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar mensaje</button>
+        <p class="form-msg" id="form-msg"></p>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <p>Derechos reservados © 2026</p>
+  </footer>
+
+
+
+</body>
+
+</html>
