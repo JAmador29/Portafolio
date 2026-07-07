@@ -44,7 +44,7 @@ jobs:
       - name: Subir los compilados (DIST)
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './Me-portafolio/dist'
+          path: '.Portafolio/Me-portafolio/dist'
 
       - name: Publicar Artefactos
         id: deployment
